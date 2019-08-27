@@ -59,7 +59,7 @@ window.handleOpenEditor = (item, id) => {
     );
     editors[id]['button'].classList.replace('order-2', 'order-1');
     editors[id]['icon'].classList.replace('order-1', 'order-2');
-    editors[id]['icon'].src = imgDown;
+    editors[id]['icon'].src = './static/img/chevron-bottom-solid.svg';
     editors[id]['open'] = false;
   }
 };
