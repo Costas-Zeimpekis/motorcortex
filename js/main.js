@@ -1,22 +1,25 @@
 // Sidebar //
-import imgOpen from '../../static/img/burger-open.svg';
-import imgClose from '../../static/img/burger-close.svg';
-import imgUp from '../../static/img/chevron-top-solid.svg';
-import imgDown from '../../static/img/chevron-bottom-solid.svg';
+// import imgOpen from '../../static/img/burger-open.svg';
+// import imgClose from '../../static/img/burger-close.svg';
+// import imgUp from '../../static/img/chevron-top-solid.svg';
+// import imgDown from '../../static/img/chevron-bottom-solid.svg';
 
 let showSideBar = true;
 const sideBar = document.getElementById('sideBar');
 const imgShowSideBar = document.getElementById('imgShowSideBar');
 
-window.sideMenuShowHandler = () => {
+function sideMenuShowHandler() {
   showSideBar
-    ? (imgShowSideBar.src = imgOpen)
-    : (imgShowSideBar.src = imgClose);
+    ? (imgShowSideBar.src = './static/img/burger-open.svg')
+    : (imgShowSideBar.src = './static/img/burger-close.svg');
 
   sideBar.classList.toggle('flex', showSideBar);
   sideBar.classList.toggle('hidden', !showSideBar);
   showSideBar = !showSideBar;
 };
+
+document.getElementById('btnSideBar').addEventListener("click", sideMenuShowHandler);
+
 
 //Tap to open//
 // const tabcontents = document.querySelectorAll('.tabcontent');
@@ -47,7 +50,7 @@ window.handleOpenEditor = (item, id) => {
     );
     editors[id]['button'].classList.replace('order-1', 'order-2');
     editors[id]['icon'].classList.replace('order-2', 'order-1');
-    editors[id]['icon'].src = imgUp;
+    editors[id]['icon'].src = './static/img/chevron-top-solid.svg';
     editors[id]['open'] = true;
   } else {
     editors[id]['element'].setAttribute(
