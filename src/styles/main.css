@@ -1,0 +1,408 @@
+:root {
+  --purpley-pink: #c445ad;
+  --blue-dark: #252254;
+  --brownish-grey: #656565;
+  --line-grey: #d7d7d7;
+}
+
+.dark-blue {
+  color: var(--blue-dark);
+}
+
+.brownish-grey {
+  color: #656565;
+}
+
+.bg-grey {
+  background-color: #d7d7d7;
+}
+
+.bg-green {
+  background-color: #1aad26;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+
+.box-shadow {
+  box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+#sideBar {
+  background-color: var(--blue-dark);
+}
+
+#sideBar ul li span {
+  line-height: 18px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.logo-container {
+  width: 240px;
+}
+
+.logo-icon {
+  width: 25px;
+  height: 23px;
+}
+
+.log-text {
+  width: 151px;
+}
+
+nav ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+
+main {
+  margin-bottom: 118px;
+}
+
+section {
+  max-width: 1280px;
+  padding: 0 24px;
+}
+
+.space-and-slider {
+  width: 260px;
+}
+
+.slide-input {
+  -webkit-appearance: none;
+  outline: none;
+  height: 9px;
+  width: 247px;
+}
+
+.slide-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--purpley-pink);
+  cursor: pointer;
+  width: 21.9px;
+  height: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.animation-section a {
+  width: 200px;
+}
+
+.animation-section a span {
+  line-height: 44px;
+  color: var(--purpley-pink);
+}
+
+.article-description {
+  width: 272px;
+}
+
+.what-you-can-do-section hr {
+  width: 178px;
+  height: 10px;
+}
+
+.what-you-can-do-section nav li {
+  height: 18px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+
+.what-you-can-do-section aside nav li span {
+  margin-right: 24px;
+}
+
+.editor {
+  width: 272px;
+  height: auto;
+  background-color: #1d1e21;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tabcontent {
+  transition: height 1s;
+  padding-right: 10px;
+}
+
+.tabcontent::-webkit-scrollbar {
+  width: 5px;
+  height: 125px;
+  border-radius: 2.5px;
+}
+
+.tabcontent::-webkit-scrollbar-track {
+  background-color: #1d1e21;
+}
+
+.tabcontent::-webkit-scrollbar-thumb {
+  background-color: #656976;
+}
+
+.tabcontent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+code {
+  height: 220px;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
+.milky-way-img-container,
+.planet-earth-img-container {
+  background-image: linear-gradient(10deg, transparent 15%, #ffffff 15%);
+}
+
+.milky-way-img {
+  width: 241px;
+  height: 235px;
+}
+
+.planet-img {
+  width: 219px;
+  height: 228px;
+}
+
+.space-img {
+  width: 100%;
+  height: 363px;
+}
+
+.explore-section {
+  margin-bottom: 96px;
+}
+
+.explore-section>div {
+  width: 272px;
+}
+
+.explore-section-title {
+  margin-bottom: 90px;
+}
+
+.explore-section a {
+  background-color: var(--purpley-pink);
+}
+
+.explore-section hr {
+  width: 100%;
+}
+
+.explore-section a span {
+  line-height: 52px;
+}
+
+.build-strong-section header hr {
+  width: 154px;
+}
+
+figure {
+  width: 205px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 1px 53px 5px rgba(37, 32, 85, 0.21);
+}
+
+figcaption {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+figcaption h5 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--blue-dark);
+}
+
+figcaption p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--brownish-grey);
+}
+
+section.slider-section {
+  width: 100vw;
+  padding: 0;
+}
+
+.slider-section .slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  height: 400px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  overflow-x: auto;
+  scroll-snap-type: both proximity;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slides>figure {
+  height: 314px;
+  scroll-snap-align: center;
+  margin: 0 8px;
+  padding: 33.5px 24px 37px;
+  box-shadow: 0 1px 53px 5px rgba(37, 32, 85, 0.21);
+}
+
+.slides>figure:first-of-type {
+  margin: 0 8px 0 0;
+}
+
+.slides>figure>figcaption {
+  width: 158px;
+}
+
+.slides>figure>img {
+  width: 64px;
+  height: 62px;
+  margin-bottom: 17px;
+}
+
+.slides>figure>figcaption h5 {
+  margin-bottom: 8.5px;
+}
+
+.slides>figure>figcaption>p {
+  font-size: 14px;
+}
+
+.slider-section a {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.whats-different-section {
+  margin-bottom: 161px;
+}
+
+.whats-different-section section {
+  margin-bottom: 48px;
+}
+
+.whats-different-section hr {
+  width: 161px;
+}
+
+
+.whats-different-section a span {
+  line-height: 56px;
+  color: var(--purpley-pink);
+}
+
+.whats-different-section article>div img:first-of-type {
+  width: 73px;
+  height: 63px;
+}
+
+.details-section {
+  margin-bottom: 118px;
+}
+
+.details-section a {
+  width: 385px;
+}
+
+.details-section a span {
+  line-height: 18px;
+  color: #225fb1;
+}
+
+.details-items>div {
+  height: 32px;
+}
+
+.detail-items>div>span:first-of-type {
+  background-color: #2e3033;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+.footer-logo-icon {
+  width: 23px;
+  height: 21px;
+}
+
+.footer-logo-text {
+  width: 138px;
+  height: 15px;
+}
+
+footer nav ul li {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+
+.bg-wave-1 {
+  width: 100vw;
+  height: 3177px;
+  background-image: url("../../static/img/bg-wave-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.bg-wave-2 {
+  top: 3730px;
+  width: 100vw;
+  height: 900px;
+  background-image: url("../../static/img/bg-wave-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+
+
+.bg-wave-3 {
+  bottom: -50px;
+  width: 100vw;
+  height: 670px;
+  background-image: url("../../static/img/bg-wave-3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}

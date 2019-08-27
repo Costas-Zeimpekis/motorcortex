@@ -1,0 +1,179 @@
+.container {
+  width: 1280px;
+}
+
+.main-header nav li a {
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+main {
+  margin-bottom: 160px;
+}
+
+.animation-section h1 {
+  font-size: 40px;
+}
+
+.animation-section p {
+  margin-bottom: 56px;
+}
+
+.what-you-can-do-section hr {
+  width: 200px;
+}
+
+.space-and-slider {
+  width: 427px;
+}
+
+.animation-section a {
+  width: 247px;
+}
+
+.animation-section a span {
+  line-height: 56px;
+  color: var(--purpley-pink);
+}
+
+.article-description {
+  width: 667px;
+}
+
+.editor {
+  height: 367px;
+  width: 1020px;
+}
+
+.explore-section>div {
+  width: 100%;
+}
+
+.explore-section h3 {
+  font-size: 40px;
+}
+
+.explore-section a {
+  width: 314px;
+}
+
+.explore-section a span {
+  line-height: 56px;
+}
+
+.explore-section {
+  margin-bottom: 280px;
+}
+
+.explore-section hr {
+  width: 350px;
+}
+
+.explore-section-title {
+  margin-bottom: 260px;
+}
+
+.milky-way-img-container {
+  background-image: linear-gradient(102deg, transparent 15%, #ffffff 15%);
+}
+
+.planet-earth-img-container {
+  background-image: linear-gradient(-77deg, transparent 15%, #ffffff 15%)
+}
+
+.build-strong-section {
+  width: 900px;
+}
+
+.build-strong-section header h2 {
+  font-size: 36px;
+}
+
+.build-strong-section section {
+  height: 850px;
+}
+
+.build-strong-section section>div {
+  width: 257px;
+}
+
+.build-strong-section section>div>figure {
+  width: 257px;
+  height: 314px;
+}
+
+.build-strong-section section>div>figure>img {
+  height: 88px;
+  width: 88px;
+  margin-bottom: 24px;
+}
+
+figcaption h5 {
+  margin-bottom: 16px;
+}
+
+.whats-different-section {
+  margin-bottom: 275px;
+}
+
+
+.whats-different-section section {
+  margin-bottom: 120px;
+}
+
+.whats-different-section h3 {
+  font-size: 40px;
+}
+
+.whats-different-section a {
+  width: 341px;
+}
+
+.whats-different-section article>div img:first-of-type {
+  height: 75px;
+}
+
+.details-section {
+  margin-bottom: 210px;
+}
+
+.details-section h4 {
+  font-size: 40px;
+}
+
+.details-section a {
+  width: 385px;
+}
+
+.details-section a span {
+  line-height: 56px;
+}
+
+.created-section p {
+  width: 858px;
+}
+
+footer {
+  margin-bottom: 56px;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.bg-wave-1 {
+  height: 3450px;
+  background-image: url("../../static/img/bg-wave-1@3x.svg");
+}
+
+.bg-wave-2 {
+  top: 4650px;
+  background-image: url("../../static/img/bg-wave-2@3x.svg");
+}
+
+.bg-wave-3 {
+  height: 600px;
+  bottom: -56px;
+  background-image: url("../../static/img/bg-wave-3@3x.svg");
+}

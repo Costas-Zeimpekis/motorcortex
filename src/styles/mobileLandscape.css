@@ -1,0 +1,17 @@
+.side-bar ul {
+  margin-top: 50px;
+}
+
+.bg-wave-1 {
+  background-image: url("../../static/img/bg-wave-1@mLandscape.svg");
+}
+
+.bg-wave-2 {
+  height: 850px;
+  background-image: url("../../static/img/bg-wave-2@mLanscape.svg");
+}
+
+.bg-wave-3 {
+  height: 670px;
+  background-image: url("../../static/img/bg-wave-3@mLandscape.svg");
+}

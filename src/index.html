@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 767px)"
+    href="./styles/mobileLandscape.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1279px)" href="./styles/styleOver768.css">
+  <link rel="stylesheet" media="screen and (min-width: 1280px)" href="./styles/styleOver1280.css">
+  <title>MotorCortex</title>
+</head>
+
+<body class="relative">
+  <div class="bg-wave-1 z-0 absolute w-full">
+  </div>
+  <div class="bg-wave-2 z-0 absolute w-full">
+  </div>
+  <div class="bg-wave-3 z-0 absolute w-full">
+  </div>
+  <div class="container relative z-10 m-auto pt-20 md:pt-24">
+    <header class="main-header w-screen fixed top-0 left-0 bg-white py-4 md:py-5">
+      <div class="container flex justify-between items-center m-auto px-6">
+        <div class="logo-container h-8 flex items-center">
+          <div class="logo-icon mr-4">
+            <img src="../static/img/fill-1.svg" alt="logo icon of MotorCortex" />
+          </div>
+          <div class="log-text h-4 md:h-5">
+            <img src="../static/img/fill-2.svg" alt="logo text of MotorCortex" />
+          </div>
+        </div>
+        <nav class="h-4">
+          <button class="z-30 relative md:hidden" onclick="sideMenuShowHandler()">
+            <img id="imgShowSideBar" src="../static/img/burger-close.svg" />
+          </button>
+          <aside id="sideBar" class="w-screen h-screen fixed top-0 left-0 hidden justify-center items-center z-20">
+            <nav>
+              <ul class="list-none text-center p-0">
+                <li class="mb-8"><a><span>DOCUMENTATION</span></a></li>
+                <li class="mb-8"><a><span>EXAMPLES</span></a></li>
+                <li class="mb-8"><a><span>LIBRARY</span></a></li>
+                <li class="mb-24"><a><span>GITHUB</span></a></li>
+                <li><a><span>MIT-LICENCE</span></a></li>
+              </ul>
+            </nav>
+          </aside>
+          <ul class="list-none text-center hidden md:block list-none p-0">
+            <li class="inline-block"><a>DOCUMENTATION</a></li>
+            <li class="inline-block"><a>EXAMPLES</a></li>
+            <li class="inline-block"><a>LIBRARY</a></li>
+            <li class="inline-block mr-0"><a>GITHUB</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <section
+        class="animation-section flex flex-col md:flex-row justify-center md:justify-between items-center mb-10 md:mb-24 xl:mb-40">
+        <div class="space-and-slider flex flex-col items-center mb-8 md:mb-0 order-1 md:order-2 xl:w-4/12">
+          <img class="mb-6" src="../static/img/space.jpg" alt="image of space">
+          <div>
+            <input type="range" min="1" max="100" value="50" class="slide-input bg-grey rounded-full">
+          </div>
+        </div>
+        <div class="flex flex-col items-center md:items-start md:mb-8 order-2 md:order-1">
+          <h1 class="text-2xl dark-blue font-bold text-center md:text-left mb-3 md:mb-4">
+            The animation<br class="md:hidden" /> framework
+          </h1>
+          <p class="text-sm xl:text-xl text-center md:text-left font-semibold dark-blue mb-8 md:mb-6 mb-14">
+            for creative developers and<br /> designers that code.
+          </p>
+          <a class="text-center rounded-full bg-white box-shadow">
+            <span class="text-sm xl:text-base font-bold">
+              Check it on GitHub
+            </span>
+          </a>
+        </div>
+      </section>
+      <section class="what-you-can-do-section text-left mb-8 md:mb-16 xl:mb-32">
+        <header class="mb-8 md:mb-6">
+          <h2 class="dark-blue text-xl xl:text-3xl font-bold mb-4">What you can do<br class="md:hidden" /> (spoiler:
+            everything)
+          </h2>
+          <hr class="bg-grey rounded-full m-0">
+        </header>
+        <article class="mb-8 xl:mb-24">
+          <h3 class="text-base xl:text-2xl font-semibold dark-blue mb-4 md:mb-2">
+            Simple syntax,<br class="md:hidden" /> attractively easy to use
+          </h3>
+          <p class="article-description text-sm xl:text-base text-normal md:font-semibold dark-blue mb-8 xl:mb-20">
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br
+              class="hidden md:block" />Monitors The Skinny on Lcd Monitor The
+            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block" /> Lcd Monitors
+          </p>
+          <section class="flex flex-row xl:justify-end m-auto xl:m-0 xl:ml-auto px-0">
+            <aside class="hidden xl:flex flex-col justify-center mr-6">
+              <nav>
+                <ul>
+                  <li class="mb-10"><span>Load Library</span><img src="../static/img/chevron-right-solid.svg"
+                      alt="arrow right icon"></li>
+                  <li class="mb-32"><span>Set the parameters</span><img src="../static/img/chevron-right-solid.svg"
+                      alt="arrow right icon"></li>
+                  <li><span>Load the player</span><img src="../static/img/chevron-right-solid.svg"
+                      alt="arrow right icon">
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+            <div class="editor flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
+              <div
+                class="milky-way-img-container md:w-6/12 flex justify-center md:justify-end xl:justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-8">
+                <img class="milky-way-img" src="../static/img/milky-way.svg" alt="milky way svg">
+              </div>
+              <div id="milky-way-tabs"
+                class="md:w-6/12 flex flex-col justify-center text-white order-2 md:order-1 h-full p-2 md:pr-0 xl:p-4">
+                <div class="tabs hidden text-white md:block mb-6 md:mb-10">
+                  <button class="w-20 h-8 rounded-lg active" name="vanillajs-code"
+                    onclick="chooseEditorTabs(this)"><span class="h-4 text-sm font-semibold">Vanilla JS</span></button>
+                  <button class="w-20 h-8 rounded-lg ml-4" onclick="chooseEditorTabs(this)" name="react-code"><span
+                      class="h-4 text-sm font-semibold ">React</span></button>
+                </div>
+                <div id="milky-way-code" class="tabcontent h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
+                  <code class="vanillajs-code md:h-full text-sm text-teal-500 break-all">componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                  </code>
+                  <code class="react-code md:h-full text-sm text-teal-500 break-all">import React from 'react';
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                  </code>
+
+                </div>
+                <button class="flex flex-col items-center text-white md:hidden"
+                  onclick="handleOpenEditor(this, 'milky-way-code')">
+                  <span class="text-xs mb-2 order-1">
+                    Tap to se how it is coded
+                  </span>
+                  <img class="order-2 mb-2" src="../static/img/chevron-bottom-solid.svg" alt="arrow icon">
+                </button>
+              </div>
+            </div>
+          </section>
+        </article>
+        <article class="mb-8 xl:mb-24">
+          <h3 class="text-base xl:text-2xl font-semibold dark-blue mb-4 md:mb-2">
+            Runtime Control, Sequencing<br class="md:hidden" /> Tools
+          </h3>
+          <p class="article-description text-sm xl:text-base text-normal md:font-semibold dark-blue mb-8 xl:mb-20">
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br
+              class="hidden md:block" />Monitors The Skinny on Lcd Monitor The
+            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block" /> Lcd Monitors
+          </p>
+          <section class="flex px-0">
+            <div class="editor flex flex-col md:flex-row rounded-lg m-auto xl:m-0 xl:mr-auto pb-1 md:px-0 md:pb-0">
+              <div
+                class="planet-earth-img-container md:w-6/12 flex justify-center md:justify-start xl:justify-center md:items-center order-1 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-8">
+                <img class="planet-img" src="../static/img/planet-earth.svg" alt="planet earth svg image">
+              </div>
+              <div id="planet-earth-tabs"
+                class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 p-4 md:p-2">
+                <div class="tabs hidden text-white md:block mb-6 md:mb-10">
+                  <button class="w-20 h-8 active rounded-lg" onclick="chooseEditorTabs(this)" name="vanillajs-code">
+                    <span class="h-4 text-sm font-semibold">
+                      Vanilla JS
+                    </span>
+                  </button>
+                  <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)" name="react-code"><span
+                      class="h-4 text-sm font-semibold">React</span>
+                  </button>
+                </div>
+                <div id="planet-earth-code"
+                  class="tabcontent h-0 md:h-full break-all md:block overflow-auto ml-8 md:mb-8">
+                  <code class="vanillajs-code h-full text-sm text-teal-500 break-all ">componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </code>
+                  <code class="react-code h-full text-sm text-teal-500 break-all"> import React from
+                    'react';
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </code>
+                </div>
+                <button onclick="handleOpenEditor(this,'planet-earth-code')"
+                  class="flex flex-col items-center text-white md:hidden">
+                  <span class="text-xs mb-2 order-1">Tap to se how it is coded</span>
+                  <img class="order-2 mb-2" src="../static/img/chevron-bottom-solid.svg" alt="arrow icon">
+                </button>
+              </div>
+          </section>
+        </article>
+        <article>
+          <h3 class="text-base xl:text-2xl font-semibold dark-blue mb-4 md:mb-2">
+            Powerful API, Smooth<br class="md:hidden" /> Animations, Full Compatibility
+          </h3>
+          <p class="article-description text-sm xl:text-base text-normal md:font-semibold dark-blue mb-8 xl:mb-20">
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br
+              class="hidden md:block" />Monitors The Skinny on Lcd Monitor The
+            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block" /> Lcd Monitors
+          </p>
+          <section class="flex px-0">
+            <div class="editor flex flex-col md:flex-row rounded-lg m-auto xl:m-0 xl:ml-auto pb-1 md:px-0 md:pb-0">
+              <div
+                class="space-img-comtainer md:w-6/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="../static/img/space@3x.jpg">
+                  <source media="(min-width: 1280px)" srcset="../static/img/space@3x.jpg">
+                  <img class="space-img" src="../static/img/space-i.png" alt="space image">
+                </picture>
+              </div>
+              <div id="space-tabs"
+                class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 md:order-1 p-2 md:pr-0 xl:p-4">
+                <div class="tabs hidden text-white md:block mb-6 md:mb-10">
+                  <button class="w-20 h-8 active rounded-lg" onclick="chooseEditorTabs(this)" name="vanillajs-code">
+                    <span class="h-4 text-sm font-semibold">
+                      Vanilla JS
+                    </span>
+                  </button>
+                  <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)" name="react-code"><span
+                      class="h-4 text-sm font-semibold">React</span>
+                  </button>
+                </div>
+                <div id="space-code" class="tabcontent h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
+                  <code class="vanillajs-code h-full text-sm text-teal-500 break-all">componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </code>
+                  <code class="react-code h-full text-sm text-teal-500 break-all">
+                    import React from 'react';
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </code>
+                </div>
+                <button onclick="handleOpenEditor(this,'space-code')"
+                  class="flex flex-col items-center text-white md:hidden">
+                  <span class="text-xs mb-2 order-1">Tap to se how it is coded</span>
+                  <img class="order-2 mb-2" src="../static/img/chevron-bottom-solid.svg" alt="arrow icon">
+                </button>
+              </div>
+          </section>
+        </article>
+      </section>
+      <section class="explore-section flex flex-col items-center md:items-end dark-blue">
+        <div>
+          <h2
+            class="explore-section-title text-center md:text-right font-bold text-xl xl:text-3xl leading-snug md-26 md:mr-24">
+            Explore galaxies<br class="md:hidden" /> of 'ready to use'<br claas="hidden md:block" /> animations and
+            plugins
+          </h2>
+          <div class="flex flex-col md:flex-row  md:justify-between items-center">
+            <div class="w-11/12 md:w-6/12 flex flex-col items-center md:items-start mb-10 md:mb-0">
+              <h3 class="text-center text-2xl text-white font-bold mb-2">Browse the Library
+              </h3>
+              <hr class="h-2 bg-white rounded-full m-0 mb-6">
+              <p class="font-semibold md:text-sm xl:text-base text-white">Get 'ready to
+                use' animations <span class="hidden xl:inline">and lips, functional plugins to the MotorCortex
+                  core</span> and upload your work to the community</p>
+            </div>
+            <a class="text-center w-full rounded-full">
+              <span class="text-white text-sm xl:text-base font-bold">
+                Check the animations library
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="build-strong-section flex flex-col items-center m-auto md:mb-64">
+        <header class="md:mb-8 xl:mb-20">
+          <h2 class="text-lg md:text-2xl font-bold dark-blue">Built in strong basis</h2>
+          <hr class="h-2 rounded-full bg-grey">
+        </header>
+        <section class="w-full hidden md:flex flex-row justify-between px-0">
+          <div class="self-center">
+            <figure class="mb-16">
+              <img src="../static/img/unplugged.svg" alt="unplugged svg icon">
+              <figcaption>
+                <h5>Compatibility</h5>
+                <p class="text-center">
+                  Cross Browser & Device Compatibility Smooth animations on both mobile nd desktop
+                </p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="../static/img/flask-1.svg" alt="flask svg icon">
+              <figcaption>
+                <h5>Tested</h5>
+                <p class="text-center">
+                  Error-Free<br />
+                  Bug-Free<br />
+                  Expandable
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="self-start">
+            <figure class="mb-16">
+              <img src="../static/img/astronaut-1.svg" alt="austronaut helmet svg icon">
+              <figcaption>
+                <h5>Support</h5>
+                <p>A community behind the project, ready to solve all your future questions</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="../static/img/game-controller.svg" alt="game controler svg icon">
+              <figcaption>
+                <h5>Run-tim Control</h5>
+                <p>Control the speed of the simulation, change the format of the clock display and many many other
+                  parameters</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="self-end">
+            <figure class="mb-16">
+              <img src="../static/img/feather.svg" alt="feather svg icon">
+              <figcaption>
+                <h5>Lightweight</h5>
+                <p>Small memory usage, easy syntax and a powerfull Api</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="../static/img/performance.svg" alt="stars svg icon">
+              <figcaption>
+                <h5>Perfomance</h5>
+                <p>Create smooth animations get the ideal perfomance for anything you will need</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </section>
+
+      <section class="slider-section mb-48 md:hidden">
+        <div class="slider">
+          <div class="slides">
+            <figure id="slide-1">
+              <img src="../static/img/unplugged.svg" alt="unplugged svg icon">
+              <figcaption>
+                <h5>Compatibility</h5>
+                <p class="text-center">
+                  Cross Browser & Device Compatibility Smooth animations on both mobile nd desktop
+                </p>
+              </figcaption>
+            </figure>
+            <figure id="slide-2">
+              <img src="../static/img/flask-1.svg" alt="flask svg icon">
+              <figcaption>
+                <h5>Tested</h5>
+                <p class="text-center">
+                  Error-Free<br class="md:hidden" />
+                  Bug-Free<br class="md:hidden" />
+                  Expandable
+                </p>
+              </figcaption>
+            </figure>
+            <figure id="slide-3">
+              <img src="../static/img/astronaut-1.svg" alt="austronaut helmet svg icon">
+              <figcaption>
+                <h5>Support</h5>
+                <p>A community behind the project, ready to solve all your future questions</p>
+              </figcaption>
+            </figure>
+            <figure id="slide-4">
+              <img src="../static/img/game-controller.svg" alt="game controler svg icon">
+              <figcaption>
+                <h5>Run-tim Control</h5>
+                <p>Control the speed of the simulation, change the format of the clock display and many many other
+                  parameters</p>
+              </figcaption>
+            </figure>
+            <figure id="slide-5">
+              <img src="../static/img/feather.svg" alt="feather svg icon">
+              <figcaption>
+                <h5>Lightweight</h5>
+                <p>Small memory usage, easy syntax and a powerfull Api</p>
+              </figcaption>
+            </figure>
+            <figure id="slide-6">
+              <img src="../static/img/performance.svg" alt="stars svg icon">
+              <figcaption>
+                <h5>Perfomance</h5>
+                <p>Create smooth animations get the ideal perfomance for anything you will need</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="dots">
+            <a href="#slide-1" id="slide-1-dot" class="mr-3"></a>
+            <a href="#slide-2" id="slide-2-dot" class="mr-3"></a>
+            <a href="#slide-3" id="slide-3-dot" class="mr-3"></a>
+            <a href="#slide-4" id="slide-4-dot" class="mr-3"></a>
+            <a href="#slide-5" id="slide-5-dot" class="mr-3"></a>
+            <a href="#slide-6" id="slide-6-dot"></a>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="whats-different-section md:w-10/12 xl:w-7/12 flex flex-col justify-center m-auto">
+        <header class="flex flex-col items-start mb-16">
+          <h2 class="text-2xl text-white font-semibold leading-tight mb-4">
+            What's different with<br class="xl:hidden" /> MoterCortex?
+          </h2>
+          <hr class="h-3 bg-white rounded-full m-0" />
+        </header>
+        <section class="px-0">
+          <article class="flex justify-between mb-3 md:mb-1">
+            <h4 class="w-7/12 xl:w-9/12 text-base xl:text-xl text-white">
+              <spann class="xl:hidden">Open Source</spann>
+              <strong class="hidden xl:inline">Open Source</strong>:
+              Community base,<br class="hidden md:block xl:hidden"> free to use forever
+            </h4>
+            <div class="flex flex-col">
+              <img class="mb-3 md:mb-0" src="../static/img/group.svg" alt="lego svg icon">
+              <img src="../static/img/lines.svg" alt="line svg icon">
+            </div>
+          </article>
+          <article class="flex justify-between items-center md:items-start mb-3 md:mb-1">
+            <h4 class="w-8/12 text=base xl:text-xl text-white">
+              Plug-in oriented design. The animation framework that
+              <spann class="xl:hidden">
+                collaborates with all librares
+              </spann>
+              <strong class="hidden xl:inline">collaborates with all librares</strong>
+            </h4>
+            <div class="flex flex-col">
+              <img class="mb-3 md:mb-0" src="../static/img/group.svg" alt="lego svg icon">
+              <img src="../static/img/lines.svg" alt="line svg icon">
+            </div>
+          </article>
+          <article class="h-auto flex justify-between">
+            <h4 class="w-8/12 text=base xl:text-xl text-white">
+              Controls & demonstrates conflicts. Use free the
+              <spann class="xl:hidden">Donckey Clip Viewer</spann>
+              <strong class="hidden xl:inline">Donckey Clip Viewer</strong>
+              to inspect the animation
+            </h4>
+            <div>
+              <img src="../static/img/group.svg" alt="lefo svg icon">
+            </div>
+          </article>
+        </section>
+        <a class="text-center rounded-full text-center bg-white md:m-auto">
+          <span class="text-sm md:text-base font-bold rounded-full">
+            Check the Motorcortex Player
+          </span>
+        </a>
+      </section>
+      <section class="details-section flex flex-wrap">
+        <div class="md:w-8/12 flex flex-row justify-between xl:justify-center m-auto mb-10 md:mb-0">
+          <div class="w-6/12 md:w-8/12 flex flex-col items-center">
+            <h4 class="text-2xl font-bold dark-blue text-right leading-relaxed xl:leading-tight mr-4 md:mb-8 xl:mb-10">
+              Building a <br /> strong and active <br />opensource project
+            </h4>
+            <a class="hidden md:block text-center rounded-full bg-white box-shadow py-3 md:py-0">
+              <span class="text-sm xl:text-base font-bold">
+                Be part of the community<br class="md:hidden" /> on Github
+              </span>
+            </a>
+          </div>
+          <div class="detail-items text-sm text-white xl:mt-5">
+            <div class="mb-5 xl:mb-8">
+              <span class="py-1 pl-1 rounded">Open Source <span
+                  class="bg-teal-600 py-1 px-3 rounded-r">&#9829;</span></span>
+            </div>
+            <div class="mb-5 xl:mb-8 rounded-sm">
+              <span class="py-1 pl-1 rounded">build <span class="bg-green py-1 px-2 rounded-r">passing</span></span>
+            </div>
+            <div class="mb-5 xl:mb-8 rounded-sm">
+              <span class="py-1 pl-1 rounded">version <span class="bg-blue-600 py-1 px-2 rounded-r">1.2.3</span></span>
+            </div>
+            <div class="mb-5 xl:mb-8 rounded-sm">
+              <span class="py-1 pl-1 rounded">licence <span class="bg-blue-600 py-1 px-2 rounded-r">MIT</span></span>
+            </div>
+            <div class="rounded-sm">
+              <span class="py-1 pl-1 rounded">codecov <span class="bg-green py-1 px-2 rounded-r">99%</span></span>
+            </div>
+          </div>
+        </div>
+        <a class="md:hidden text-center rounded-full bg-white py-3 md:py-0">
+          <span class="text-sm md:text-base font-bold">
+            Be part of the community<br class="md:hidden" /> on Github
+          </span>
+        </a>
+      </section>
+      <section class="created-section flex flex-col items-start md:items-end">
+        <h4 class="flex justify-start items-center mb-10">
+          <span class="text-base md:text-2xl xl:text-4xl font-semibold text-right dark-blue mr-2 md:mr-3">Created
+            with</span>
+          <picture>
+            <source media="(min-width: 768px)" srcset="../static/img/heart.png">
+            <source media="(min-width: 1920px)" srcset="../static/img/heart@2x.png">
+            <img src="../static/img/heart.png" alt="Kiss Button Logo">
+          </picture>
+          <span class="by text-base md:text-2xl xl:text-4xl font-semibold text-right dark-blue ml-2 md:ml-3">by</span>
+          <picture>
+            <source media="(min-width: 768px)" srcset="../static/img/kiss-logo@2x.png">
+            <source media="(min-width: 1920px)" srcset="../static/img/kiss-logo@3x.png">
+            <img src="../static/img/kiss-logo.png" alt="Kiss Button Logo">
+          </picture>
+        </h4>
+        <p class="md:w-9/12 text-sm md:text-base xl:text-2xl font-medium brownish-grey">
+          Open Source is on our DNA and part of <br class="md:hidden" />our identity. We believe in Open
+          <br class="md:hidden" />Source and we
+          giveback to the <br class="md:hidden" />community by contributing ideas,
+          <br class="md:hidden" /> tools and libraries
+        </p>
+      </section>
+    </main>
+    <footer class="px-6">
+      <div class="logo-container flex flex-row items-center justify-start mb-6">
+        <div class="footer-logo-icon mr-4">
+          <img src="../static/img/fill-1.svg" alt="logo icon of MotorCortex" />
+        </div>
+        <div class="footer-logo-text">
+          <img src="../static/img/fill-2.svg" alt="logo text of MotorCortex" />
+        </div>
+      </div>
+      <nav class="flex flex-col md:flex-row justify-between">
+        <ul class="flex flex-col md:flex-row mb-8 md:mb-0">
+          <li class="mb-3 md:mr-4 md:mb-0"><a>DOCUMENTATION</a></li>
+          <li class="mb-3 md:mr-4 md:mb-0"><a>EXAMPLES</a></li>
+          <li class="mb-3 md:mr-4 md:mb-0"><a>LIBRARY</a></li>
+          <li><a>GITHUB</a></li>
+        </ul>
+        <ul>
+          <li><a>MIT-LICENCE</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+  </script>
+</body>
+
+</html>
