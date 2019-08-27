@@ -130,16 +130,16 @@
 
   .bg-wave-1 {
     height: 2525px;
-    background-image: url("../../static/img/bg-wave-1@2x.svg");
+    background-image: url(".././static/img/bg-wave-1@2x.svg");
   }
 
   .bg-wave-2 {
     top: 3445px;
-    background-image: url("../../static/img/bg-wave-2@2x.svg");
+    background-image: url(".././static/img/bg-wave-2@2x.svg");
   }
 
   .bg-wave-3 {
     bottom: -30px;
     height: 600px;
-    background-image: url("../../static/img/bg-wave-3@2x.svg");
+    background-image: url(".././static/img/bg-wave-3@2x.svg");
   }
